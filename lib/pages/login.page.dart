@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teladelogin_balta/pages/reset-password.page.dart';
+import 'package:teladelogin_balta/pages/signup.page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -151,7 +152,12 @@ class LoginPage extends StatelessWidget {
                   "Cadastre-se",
                   textAlign: TextAlign.center,
                 ),
-                onPressed: () {},
+                onPressed: () { Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignupPage(),
+                      ));
+                },
               ),
             )
           ],
